@@ -20,19 +20,20 @@ class App extends Component {
     document.removeEventListener('DOMMouseScroll', this.handleScroll);
   }
   handleScroll(e) {
+		const { people } = this.state;
     var e = window.event || e;
     var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-    if (delta < 0) {
-      if (this.state.selected === 0) return this.setState({ selected: 25 })
+    if (delta < 0 && e.wheelDelta < -100) {
+      if (this.state.selected === 0) return this.setState({ selected: people.length - 1 })
       return this.setState({ selected: this.state.selected - 1})
     }
-    else {
-      if (this.state.selected === 25) return this.setState({ selected: 0 })
+    if (delta > 0 && e.wheelDelta > 100) {
+      if (this.state.selected === people.length - 1) return this.setState({ selected: 0 })
       return this.setState({ selected: this.state.selected + 1})
     }
   }
-  handleSelect(name) {
-    this.setState({ selected: name })
+  handleSelect(id) {
+    this.setState({ selected: id })
   }
   render() {
     const { selected, people } = this.state;
@@ -42,7 +43,7 @@ class App extends Component {
             people={people}
             selected={selected}
             onSelect={this.handleSelect.bind(this)}
-            radius={20}
+            radius={window.innerHeight / 3}
           />
       </div>
     );

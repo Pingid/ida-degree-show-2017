@@ -12,7 +12,7 @@ export default {
     // },
     {
       name: 'Daichi',
-      profile: { image: '/profile-photos/small/Daichi.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Daichi.jpg' },
       work: { images: [ { src: '/people/Annie/DaichiThinkRed.jpg' }] },
     },
     // {
@@ -22,7 +22,7 @@ export default {
     // },
     {
       name: 'Eyob',
-      profile: { image: '/profile-photos/small/Eyob.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Eyob.jpg' },
       work: { images: [] },
     },
     // {
@@ -37,47 +37,47 @@ export default {
     // },
     {
       name: 'Hyo',
-      profile: { image: '/profile-photos/small/Hyo.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Hyo.jpg' },
       work: { images: [ { src: '/people/Annie/DaichiThinkRed.jpg' }] },
     },
     {
       name: 'Jodie',
-      profile: { image: '/profile-photos/small/Jodie.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Jodie.jpg' },
       work: { images: [] },
     },
     {
       name: 'Joe',
-      profile: { image: '/profile-photos/small/Joe.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Joe.jpg' },
       work: { images: [] },
     },
     {
       name: 'Marion',
-      profile: { image: '/profile-photos/small/Marion.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Marion.jpg' },
       work: { images: [] },
     },
     {
       name: 'Matto',
-      profile: { image: '/profile-photos/small/Matto.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Matto.jpg' },
       work: { images: [] },
     },
     {
       name: 'Mo',
-      profile: { image: '/profile-photos/small/Mo.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Mo.jpg' },
       work: { images: [] },
     },
     {
       name: 'Pinks',
-      profile: { image: '/profile-photos/small/Pinks.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Pinks.jpg' },
       work: { images: [] },
     },
     {
       name: 'Rob',
-      profile: { image: '/profile-photos/small/Rob.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Rob.jpg' },
       work: { images: [] },
     },
     {
       name: 'Rosie',
-      profile: { image: '/profile-photos/small/Rosie.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Rosie.jpg' },
       work: { images: [] },
     },
     // {
@@ -87,37 +87,37 @@ export default {
     // },
     {
       name: 'Sasha',
-      profile: { image: '/profile-photos/small/Sasha.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Sasha.jpg' },
       work: { images: [] },
     },
     {
       name: 'Shinny',
-      profile: { image: '/profile-photos/small/Shinny.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Shinny.jpg' },
       work: { images: [] },
     },
     {
       name: 'Stefon',
-      profile: { image: '/profile-photos/small/Stefon.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Stefon.jpg' },
       work: { images: [] },
     },
     {
       name: 'Sydney',
-      profile: { image: '/profile-photos/small/Sydney.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Sydney.jpg' },
       work: { images: [] },
     },
     {
       name: 'Tommy',
-      profile: { image: '/profile-photos/small/Tommy.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Tommy.jpg' },
       work: { images: [] },
     },
     {
       name: 'Tudor',
-      profile: { image: '/profile-photos/small/Tudor.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Tudor.jpg' },
       work: { images: [] },
     },
     {
       name: 'Viola',
-      profile: { image: '/profile-photos/small/Viola.jpg' },
+      profile: { image: '/profile-photos/small-cropped/Viola.jpg' },
       work: { images: [] },
     },
     // {
