@@ -3,127 +3,201 @@ export default {
     // {
     //   name: 'Annie',
     //   profile: { },
-    //   work: { images: [ { src: '/people/Annie/show.jpg' }] },
+    //   work: [ { src: '/people/Annie/show.jpg' }]
     // },
     // {
     //   name: 'Chiara',
     //   profile: { },
-    //   work: { images: [] },
+    //   work: []
     // },
     {
       name: 'Daichi',
-      profile: { image: '/profile-photos/small-cropped/Daichi.jpg' },
-      work: { images: [ { src: '/people/Annie/DaichiThinkRed.jpg' }] },
+      profile: {
+        name: 'Daichi Yamamoto',
+        title: 'Interactive Sound Artist, Musician',
+        website: 'daichibarnett.com',
+        image: 'profile-photos/small-cropped/Daichi.jpg'
+      },
+      work: [ { src: 'people/Daichi/DaichiThinkRed.jpg' }]
     },
     // {
     //   name: 'Dave',
     //   profile: { },
-    //   work: { images: [] },
+    //   work: []
     // },
     {
       name: 'Eyob',
-      profile: { image: '/profile-photos/small-cropped/Eyob.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Eyob Habte',
+        title: 'Interaction Designer',
+        website: 'www.eyobhabte.com',
+        image: 'profile-photos/small-cropped/Eyob.jpg'
+      },
+      work: []
     },
     // {
     //   name: 'George',
     //   profile: { },
-    //   work: { images: [] },
+    //   work: []
     // },
     // {
     //   name: 'Harry',
     //   profile: { },
-    //   work: { images: [] },
+    //   work: []
     // },
     {
       name: 'Hyo',
-      profile: { image: '/profile-photos/small-cropped/Hyo.jpg' },
-      work: { images: [ { src: '/people/Annie/DaichiThinkRed.jpg' }] },
+      profile: {
+        name: 'Hyo seo kim',
+        title: 'Interaction Designer, Illustrator',
+        website: 'www.behance.net/hyosekim',
+        image: 'profile-photos/small-cropped/Hyo.jpg' },
+      work: []
     },
     {
       name: 'Jodie',
-      profile: { image: '/profile-photos/small-cropped/Jodie.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Jodie Newsum',
+        title: 'Interaction Designer',
+        website: 'jodienewsum.co.uk',
+        image: 'profile-photos/small-cropped/Jodie.jpg' },
+      work: []
     },
     {
       name: 'Joe',
-      profile: { image: '/profile-photos/small-cropped/Joe.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Joe Hoole',
+        title: 'Interaction designer',
+        website: 'joehoole.co.uk',
+        image: 'profile-photos/small-cropped/Joe.jpg' },
+      work: [ { src: 'people/Joe/20170606_171158.jpg'}]
     },
     {
       name: 'Marion',
-      profile: { image: '/profile-photos/small-cropped/Marion.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Marion Lagedamont',
+        title: 'Critical Designer',
+        website: 'www.marionlage.com',
+        image: 'profile-photos/small-cropped/Marion.jpg' },
+      work: []
     },
     {
       name: 'Matto',
-      profile: { image: '/profile-photos/small-cropped/Matto.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Matthew Broughton',
+        title: 'Designer',
+        website: 'https://www.instagram.com/matt_savage_gvillain',
+        image: 'profile-photos/small-cropped/Matto.jpg' },
+      work: []
     },
     {
       name: 'Mo',
-      profile: { image: '/profile-photos/small-cropped/Mo.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Mohamed Alaradi',
+        title: 'Photographer, Videographer, Interaction Designer',
+        website: 'www.aradi.me',
+        image: 'profile-photos/small-cropped/Mo.jpg' },
+      work: [ { src: 'people/Mo/DSC_3247.JPG'}]
     },
     {
       name: 'Pinks',
-      profile: { image: '/profile-photos/small-cropped/Pinks.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Alexandra Pinkhassov',
+        title: 'Visual Artist',
+        website: 'https://www.instagram.com/Sashapin',
+        image: 'profile-photos/small-cropped/Pinks.jpg' },
+      work: [ { src: 'people/Pinks/image1.JPG'}]
     },
     {
       name: 'Rob',
-      profile: { image: '/profile-photos/small-cropped/Rob.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Robert Karpavicius',
+        title: 'Interaction Designer',
+        website: 'wolfcriedboy.co.uk',
+        image: 'profile-photos/small-cropped/Rob.jpg' },
+      work: []
     },
     {
       name: 'Rosie',
-      profile: { image: '/profile-photos/small-cropped/Rosie.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Rosie Allen',
+        title: 'Interaction Designer, Events, Designer',
+        website: 'www.rosiejallen.com',
+        image: 'profile-photos/small-cropped/Rosie.jpg' },
+      work: []
     },
     // {
     //   name: 'Sarah',
     //   profile: { },
-    //   work: { images: [] },
+    //   work: []
     // },
     {
       name: 'Sasha',
-      profile: { image: '/profile-photos/small-cropped/Sasha.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Alexandra Sokolova',
+        title: 'Photographer, Interaction Designer',
+        website: 'alexandra-sokolova.com',
+        image: 'profile-photos/small-cropped/Sasha.jpg' },
+      work: []
     },
     {
       name: 'Shinny',
-      profile: { image: '/profile-photos/small-cropped/Shinny.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Myeong Shin Kim',
+        title: 'Interaction Artist',
+        website: 'www.myeongshinkim.com',
+        image: 'profile-photos/small-cropped/Shinny.jpg' },
+      work: []
     },
     {
       name: 'Stefon',
-      profile: { image: '/profile-photos/small-cropped/Stefon.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Stefon Grant',
+        title: 'Photographer, Artist',
+        website: 'https://www.instagram.com/stefon.grant',
+        image: 'profile-photos/small-cropped/Stefon.jpg' },
+      work: [ { src: 'people/Stefon/Millennium by Stefon Grant.jpg'}]
     },
     {
       name: 'Sydney',
-      profile: { image: '/profile-photos/small-cropped/Sydney.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Sydney Fortune',
+        title: 'Interactive Performance Artist',
+        website: 'sgfortune2.wixsite.com/sydneyfortune',
+        image: 'profile-photos/small-cropped/Sydney.jpg' },
+      work: []
     },
     {
       name: 'Tommy',
-      profile: { image: '/profile-photos/small-cropped/Tommy.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Tommaso Cesaro',
+        title: 'Interactive Designer',
+        website: 'www.tommasocesaro.co.uk',
+        image: 'profile-photos/small-cropped/Tommy.jpg' },
+      work: [{ src: 'people/Tommy/Screen Shot 2017-06-05 at 14.05.36.png' }]
     },
     {
       name: 'Tudor',
-      profile: { image: '/profile-photos/small-cropped/Tudor.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Tudor Crockford',
+        title: 'Interactive Designer, Digital Artist',
+        website: 'www.tudorcrockford.com',
+        image: 'profile-photos/small-cropped/Tudor.jpg' },
+      work: [{ src: 'people/Tudor/cc42.jpg'}]
     },
     {
       name: 'Viola',
-      profile: { image: '/profile-photos/small-cropped/Viola.jpg' },
-      work: { images: [] },
+      profile: {
+        name: 'Viola Zini',
+        title: 'Interaction designer',
+        website: 'http://violazini.com',
+        image: 'profile-photos/small-cropped/Viola.jpg' },
+      work: [{ src: 'people/Viola/IMG_6224.jpg' }, { src: 'people/Viola/IMG_6240.jpg' }]
     },
     // {
     //   name: 'Yasmine',
     //   profile: { },
-    //   work: { images: [] },
+    //   work: []
     // },
   ]
 }
