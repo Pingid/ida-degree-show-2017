@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MobileView from '../MobileView';
 import LeftSide from '../LeftSide';
 import Project from '../Project';
 
@@ -8,17 +9,17 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      selected: 0,
+      selected: null,
       people: data.people.map((x, i) => Object.assign({}, x, { _id: i })),
     }
   }
   componentDidMount() {
-    document.addEventListener('mousewheel', this.handleScroll.bind(this));
-    document.addEventListener('DOMMouseScroll', this.handleScroll.bind(this));
+    // document.addEventListener('mousewheel', this.handleScroll.bind(this));
+    // document.addEventListener('DOMMouseScroll', this.handleScroll.bind(this));
   }
   componentWillUnmount() {
-    document.removeEventListener('mousewheel', this.handleScroll);
-    document.removeEventListener('DOMMouseScroll', this.handleScroll);
+    // document.removeEventListener('mousewheel', this.handleScroll);
+    // document.removeEventListener('DOMMouseScroll', this.handleScroll);
   }
   handleScroll(e) {
 		const { people } = this.state;
@@ -34,20 +35,33 @@ class App extends Component {
     }
   }
   handleSelect(id) {
+    console.log(id);
     this.setState({ selected: id })
   }
   render() {
     const { selected, people } = this.state;
+    console.log(selected);
     return (
       <div className="App">
-        <LeftSide
-          people={people}
-          selected={selected}
-          onSelect={this.handleSelect.bind(this)}
-          radius={window.innerHeight / 3} />
-        <Project
-          people={people}
-          selected={selected} />
+        {
+          window.innerWidth < 1000 ? (
+            <MobileView
+              people={people}
+              selected={selected}
+              onSelect={this.handleSelect.bind(this)} />
+          ) : (
+            <div>
+              <LeftSide
+                people={people}
+                selected={selected}
+                onSelect={this.handleSelect.bind(this)}
+                radius={window.innerHeight / 3} />
+              <Project
+                people={people}
+                selected={selected} />
+            </div>
+          )
+        }
       </div>
     );
   }
