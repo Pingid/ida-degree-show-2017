@@ -6,24 +6,33 @@ body {
   font-family: 'Lato', helvetica, sans-serif;
 }
 
+h1 {
+  font-weight: normal;
+  color: #EA601D;
+  font-size: 55pt;
+}
+
 h2 {
   font-weight: normal;
-  color: #0067A9;
-  padding: 0;
-  font-size: 21pt;
+  color: #EA601D;
+  font-size: 34pt;
 }
 
 h3 {
   font-weight: normal;
-  color: #0067A9;
-  padding: 0;
-  font-size: 13pt;
+  color: #EA601D;
+  font-size: 21pt;
 }
 
 h4 {
   font-weight: normal;
   color: #0067A9;
-  padding: 0;
+  font-size: 13pt;
+}
+
+h5 {
+  font-weight: normal;
+  color: #0067A9;
   font-size: 8pt;
 }
 

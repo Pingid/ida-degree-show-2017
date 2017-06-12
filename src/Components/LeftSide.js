@@ -33,14 +33,7 @@ const LeftSide = ({ people, selected, onSelect }) => {
             <line style={{ fill: '#0067a9' }} x1="1554.57" y1="328.05" x2="1552.59" y2="320.52"/>
           </g>
         </svg>
-          <div style={{ position: 'relative', top: width * -0.22137 , left: width * 0.3431 }}>
-            <Wheel
-              people={people}
-              selected={selected}
-              onSelect={onSelect}
-              radius={width / 6.5}
-            />
-          </div>
+          
        </div>
     </div>
   )

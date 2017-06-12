@@ -1,5 +1,14 @@
 export default {
   people: [
+    {
+      name: 'IDA',
+      profile: {
+        name: '',
+        text: 'We are Interaction Design Arts at the London Collage of Communication graduating 2017. Here you can see are work exhibited at our 360 degree show and find links to our other work.',
+        image: 'profile-photos/small-cropped/01.png'
+      },
+      work: []
+    },
     // {
     //   name: 'Annie',
     //   profile: { },
