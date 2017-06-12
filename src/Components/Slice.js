@@ -37,6 +37,7 @@ class Slice extends Component {
               backgroundSize: `auto 50%`,
               borderRadius: '100%',
               clipPath: `polygon(${polyLeft}% 0%, 50% 50%, ${polyRight}% 0%)`,
+              WebkitClipPath: `polygon(${polyLeft}% 0%, 50% 50%, ${polyRight}% 0%)`,
               transform: `rotate(${rotate}deg)`,
               filter: `grayscale(${grey}%)`,
               zIndex: hovering ? 10 : 1,
