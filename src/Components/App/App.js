@@ -54,7 +54,10 @@ class App extends Component {
   }
   render() {
     const { selected, people } = this.state;
-    const wheelRadius = window.innerHeight / 3;
+    const wheelRadius = () => {
+      if (window.innerWidth > window.innerHeight) return (window.innerHeight / 2) - 40;
+      return (window.innerWidth / 2) - 40;
+    }
     return (
       <div className="App">
         <Header />
@@ -77,12 +80,21 @@ class App extends Component {
             </div>
           )
         }
-        <div style={{ position: 'fixed', bottom: -wheelRadius, left: '50%', marginLeft: -wheelRadius  }}>
+        <div style={{
+          top: 0,
+          position: 'fixed',
+          width: '100vw',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          zIndex:-1
+        }}>
           <Wheel
             people={people}
             selected={selected}
             onSelect={this.handleSelect.bind(this)}
-            radius={wheelRadius}
+            radius={wheelRadius()}
           />
         </div>
       </div>

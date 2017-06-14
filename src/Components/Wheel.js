@@ -25,32 +25,32 @@ class Wheel extends Component {
       return newRotation
     }
     return (
-               <Motion style={{ rotation: spring(wheelRotation()) }}>
-                       { ({ rotation }) => (
-                               <div style={{
-                                width: `${2 * radius}px`,
-                                height: `${2 * radius}px`,
-                                transform: `rotate(${rotation}deg)` }}>
-                        {
-                                people.map((x) => {
-                                        const src = require(`../resources/profile-photos/small-cropped/${x.name}.jpg`);
-                                        return (
-                                                        <Slice
-                                                                key={x._id}
-                                                                imageSrc={src}
-                                                                radius={radius}
-                                                                rotation={sliceRotation(x._id)}
-                                                                selected={x._id === selected}
-                                                                onSelect={() => onSelect(x._id)}
-                                                                theta={theta}
-                                                                divisions={people.length}
-                                                        />
-                                        )
-                                })
-                        }
-                        </div>
-                       )}
-               </Motion>
+      <Motion style={{ rotation: spring(wheelRotation()) }}>
+        { ({ rotation }) => (
+          <div style={{
+          width: `${2 * radius}px`,
+          height: `${2 * radius}px`,
+          transform: `rotate(${rotation}deg)` }}>
+          {
+            people.map((x) => {
+              const src = require(`../resources/profile-photos/small-cropped/${x.name}.jpg`);
+              return (
+                <Slice
+                    key={x._id}
+                    imageSrc={src}
+                    radius={radius}
+                    rotation={sliceRotation(x._id)}
+                    selected={x._id === selected}
+                    onSelect={() => onSelect(x._id)}
+                    theta={theta}
+                    divisions={people.length}
+                />
+              )
+            })
+          }
+          </div>
+        )}
+      </Motion>
     )
   }
 }
