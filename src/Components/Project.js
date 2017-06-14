@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Project = ({ people, selected }) => {
-  const currentPerson = people.filter(x => x._id === selected)[0];
+  const currentPerson = people.find(x => x._id === selected);
+  console.log(people, selected, currentPerson);
   return (
     <div>
       <div style={{
