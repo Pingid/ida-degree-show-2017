@@ -23,7 +23,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      selected: 14,
+      selected: 0,
       people: data.people.map((x, i) => Object.assign({}, x, { _id: i })),
     }
   }
@@ -61,25 +61,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {
-          selected !== 0 ? (
-            <Person
-              people={people}
-              selected={selected}
-              onSelect={this.handleSelect.bind(this)} />
-          ) : (
-            <div style={{
-              height: '83.5vh',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
-            }}>
-              <h3 style={{ width: '61.8vw', color: 'black' }}>
-                We are Interaction Design Arts at the London Collage of Communication graduating 2017. Here you can see are work exhibited at our 360 degree show and find links to our other work.
-              </h3>
-            </div>
-          )
-        }
         <div style={{
           top: 0,
           position: 'fixed',
@@ -87,8 +68,7 @@ class App extends Component {
           height: '100vh',
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center',
-          zIndex:-1
+          alignItems: 'center'
         }}>
           <Wheel
             people={people}
@@ -96,6 +76,35 @@ class App extends Component {
             onSelect={this.handleSelect.bind(this)}
             radius={wheelRadius()}
           />
+        </div>
+        <div style={{
+          width: '100%',
+          height: '50vh',
+          background: 'white',
+          position: 'fixed',
+          bottom: '0',
+          opacity: '.95'}}>
+        </div>
+        <div style={{
+          position: 'fixed',
+          width: '100%',
+          height: '50vh',
+          bottom: '0',
+          paddingTop: '2rem',
+          boxSizing: 'border-box'
+        }}>
+          {
+            selected !== 0 ? (
+              <Person
+                people={people}
+                selected={selected}
+                onSelect={this.handleSelect.bind(this)} />
+            ) : (
+              <h3 style={{ width: '61.8vw', color: 'black', margin: '0 auto', maxWidth: '46rem', fontWeight: '600' }}>
+                We are Interaction Design Arts at the London Collage of Communication graduating 2017. Here you can see are work exhibited at our 360 degree show and find links to our other work.
+              </h3>
+            )
+          }
         </div>
       </div>
     );

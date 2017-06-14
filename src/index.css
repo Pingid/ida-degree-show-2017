@@ -52,11 +52,22 @@ a:visited { color: inherit; }
 
 /* COSTOM CLASSES ------------------------------------------------------------------------*/
 
+.slice {
+  filter: grayscale(100%);
+  opacity: .5;
+  transition: .3s;
+}
+
+.slice-selected {
+  filter: grayscale(0%);
+  opacity: 1;
+}
 .person-info {
+  position: fixed;
+  top: 4rem;
   height: 25vh;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   margin-left: 4rem;
   margin-bottom: 1rem;
 }
@@ -77,7 +88,7 @@ a:visited { color: inherit; }
 
 .person-work {
   width: 100%;
-  height: 33vh;
+  height: 30.9vh;
   display: flex;
   justify-content: center;
 }

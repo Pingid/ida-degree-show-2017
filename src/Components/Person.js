@@ -3,12 +3,15 @@ import React from 'react';
 const Person = ({ people, selected, onSelect }) => {
   const currentPerson = people.filter(x => x._id === selected)[0];
   return (
-    <div>
+    <div style={{
+
+    }}>
       <div className="person-info">
         <h2 style={{ margin: 0, paddingBottom: '5px' }}>{currentPerson.profile.name}</h2>
         <h4 style={{ margin: 0 }}>{currentPerson.profile.title}</h4>
         <h5 style={{ margin: 0, marginTop: '5px' }} className="clickable"><a href={currentPerson.profile.website}>{currentPerson.profile.website}</a></h5>
       </div>
+      <div style={{ width: '100%', height: '50vh', boxSizing: 'border-box', padding: '0 2rem', display: 'flex', justifyContent: 'center' }}>
         <div className="person-work" style={{}}>
           {
             currentPerson.work.map((piece, i) => {
@@ -33,16 +36,17 @@ const Person = ({ people, selected, onSelect }) => {
                 return null
               }
               return [
+                <img style={{ height: '100%' }} src={image()} alt="presentation" />,
                 <div style={{ margin: '0 2rem', maxWidth: '17rem', minWidth: '10rem' }}>
                   <h4 className="orange" style={{ marginTop: 0 }}>{piece.name}</h4>
                   <h5 style={{  }}>{piece.description}</h5>
                   { collaborators() }
-                </div>,
-                <img style={{ height: '100%' }} src={image()} alt="presentation" />
+                </div>
               ];
             })
           }
         </div>
+      </div>
     </div>
   )
 }
