@@ -15,11 +15,8 @@ const Person = ({ people, selected, onSelect }) => {
         <div className="person-work" style={{}}>
           {
             currentPerson.work.map((piece, i) => {
-              const image = () => {
-                // if (piece.src) return require(`../resources/${piece.src}`);
-                // if (piece.drawing) return require(`../resources/drawings/${currentPerson.name}.jpg`);
-                return require(`../resources/drawings/${currentPerson.name}.jpg`);
-              }
+              console.log(i);
+              const image = require(`../resources/drawings-transparent/${currentPerson.name}-${i + 1}.png`);
               const collaborators = () => {
                 if (piece.collaborators) {
                   const collaborators = piece.collaborators.map(x => people.find(y => y.name === x));
@@ -36,7 +33,14 @@ const Person = ({ people, selected, onSelect }) => {
                 return null
               }
               return [
-                <img style={{ height: '100%' }} src={image()} alt="presentation" />,
+                <div style={{
+                  backgroundImage: `url(${image})`,
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'right',
+                  width: '100%',
+                  maxWidth: '40rem',
+                  minWidth: '20rem' }}></div>,
                 <div style={{ margin: '0 2rem', maxWidth: '17rem', minWidth: '10rem' }}>
                   <h4 className="orange" style={{ marginTop: 0 }}>{piece.name}</h4>
                   <h5 style={{  }}>{piece.description}</h5>

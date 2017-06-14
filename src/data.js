@@ -208,6 +208,9 @@ export default {
     {
       name: 'Sara',
       profile: {
+        name: 'Sara Tavasolian',
+        title: 'Art Director, Graphic Designer',
+        website: 'www.saratavasolian.com',
         drawing: true,
       },
       work: [{
