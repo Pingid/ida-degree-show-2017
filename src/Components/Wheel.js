@@ -33,7 +33,7 @@ class Wheel extends Component {
   				 transform: `rotate(${rotation}deg)` }}>
   			 {
   				 people.map((x) => {
-  					 const src = x.profile.image ? require(`../resources/${x.profile.image}`) : ''
+  					 const src = require(`../resources/profile-photos/small-cropped/${x.name}.jpg`);
   					 return (
   							 <Slice
   								 key={x._id}

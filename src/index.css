@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+/* TYPE CLASSES ------------------------------------------------------------------------*/
+
 body {
   margin: 0;
   padding: 0;
@@ -36,6 +38,57 @@ h5 {
   font-size: 8pt;
 }
 
-a { color: inherit; text-decoration: none; transition: .3s opacity; }
-a:hover { opacity: .5; }
+/* HELPER CLASSES ------------------------------------------------------------------------*/
+
+.black { color: black }
+.orange { color: #EA601D }
+.blue { color: #0067A9 }
+
+.clickable { cursor: pointer; transition: .1s opacity }
+.clickable:hover { opacity: .9 }
+
+a { color: inherit; text-decoration: none; }
 a:visited { color: inherit; }
+
+/* COSTOM CLASSES ------------------------------------------------------------------------*/
+
+.person-info {
+  height: 25vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  height: 1.8rem;
+  display: flex;
+  box-sizing: border-box;
+}
+.header-line {
+  margin: 0;
+  paddingLeft: 1rem;
+  borderLeft: 1px solid black;
+}
+
+.person-work {
+  width: 100%;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .person-info { margin-left: 2rem; margin-right: 2rem; margin-top: 2rem; }
+  .header {
+    justify-content: space-between;
+    right: 0;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .header-line { border: none; padding: 0 }
+}

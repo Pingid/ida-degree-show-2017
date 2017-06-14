@@ -1,0 +1,14 @@
+.person-info {
+  height: 25vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .person-info {
+    margin-top: 4rem;
+  }
+}

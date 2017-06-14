@@ -3,7 +3,7 @@ import { layoutGenerator } from 'react-break';
 
 import Header from '../Header';
 import Wheel from '../Wheel';
-import Project from '../Project';
+import Person from '../Person';
 
 import data from '../../data';
 
@@ -23,7 +23,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      selected: 0,
+      selected: 14,
       people: data.people.map((x, i) => Object.assign({}, x, { _id: i })),
     }
   }
@@ -60,9 +60,10 @@ class App extends Component {
         <Header />
         {
           selected !== 0 ? (
-            <Project
+            <Person
               people={people}
-              selected={selected} />
+              selected={selected}
+              onSelect={this.handleSelect.bind(this)} />
           ) : (
             <div style={{
               height: '83.5vh',
