@@ -20,7 +20,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      selected: 23,
+      selected: 0,
       people: data.people.map((x, i) => Object.assign({}, x, { _id: i })),
     }
   }

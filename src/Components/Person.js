@@ -16,7 +16,6 @@ const Person = ({ people, selected, onSelect }) => {
         <div className="person-work" style={{}}>
           {
             currentPerson.work.map((piece, i) => {
-              console.log(i);
               const image = require(`../resources/drawings/${currentPerson.name}-${i + 1}.jpg`);
               const collaborators = () => {
                 if (piece.collaborators) {
