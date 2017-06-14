@@ -25,14 +25,21 @@ class App extends Component {
     }
   }
   componentDidMount() {
+    this.timer = setInterval(this.incrementSelection.bind(this), 15000);
     if (window.innerWidth > 600) {
       document.addEventListener('mousewheel', this.handleScroll.bind(this));
       document.addEventListener('DOMMouseScroll', this.handleScroll.bind(this));
     }
   }
   componentWillUnmount() {
+    clearInterval(this.timer);
     document.removeEventListener('mousewheel', this.handleScroll);
     document.removeEventListener('DOMMouseScroll', this.handleScroll);
+  }
+  incrementSelection() {
+    const { selected, people } = this.state;
+    if (selected >= people.length - 1) return this.setState({ selected: 0 });
+    return this.setState({ selected: selected + 1 });
   }
   handleScroll(event) {
 		const { people } = this.state;
