@@ -20,7 +20,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      selected: 1,
+      selected: 23,
       people: data.people.map((x, i) => Object.assign({}, x, { _id: i })),
     }
   }
@@ -34,10 +34,10 @@ class App extends Component {
     document.removeEventListener('mousewheel', this.handleScroll);
     document.removeEventListener('DOMMouseScroll', this.handleScroll);
   }
-  handleScroll(e) {
+  handleScroll(event) {
 		const { people } = this.state;
-    var e = window.event || e;
-    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    let e = window.event || event;
+    const delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
     if (delta < 0 && e.wheelDelta < -10) {
       if (this.state.selected === 0) return this.setState({ selected: people.length - 1 })
       return this.setState({ selected: this.state.selected - 1})
@@ -48,7 +48,6 @@ class App extends Component {
     }
   }
   handleSelect(id) {
-    console.log(id);
     this.setState({ selected: id })
   }
   render() {

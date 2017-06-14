@@ -309,8 +309,6 @@ export default {
         name: 'Music Wheel',
         description: 'Inspired by the sensory condition Synaesthesia, this project aims to explore the creative possibilities that exist across the audio visual spectrum.',
         src: 'people/Viola/IMG_6224.jpg'
-      }, {
-        src: 'people/Viola/IMG_6240.jpg'
       }]
     },
     {

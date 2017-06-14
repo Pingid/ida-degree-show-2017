@@ -1,6 +1,6 @@
 import React from 'react';
+import { uniqueId } from 'lodash';
 
-import Header from './Header';
 import MobilePerson from './MobilePerson';
 
 const MobileView = ({ people, selected, onSelect }) => {
@@ -21,12 +21,14 @@ const MobileView = ({ people, selected, onSelect }) => {
         flexFlow: 'row wrap',
         boxSizing: 'content-box',
         padding: '0 1 rem',
+        marginBottom: '5rem',
       }}>
         {
           people.map((person, index) => {
+            if (person._id === 0) return null;
             return (
-              <div style={{ flex: '33.33%' }} onClick={() => onSelect(person._id)} key={index}>
-                <img style={{ width: '100%' }} src={require(`../resources/profile-photos/small-cropped/${person.name}.jpg`)} />
+              <div style={{ flex: '0 0 33.33%' }} onClick={() => onSelect(person._id)} key={uniqueId()}>
+                <img alt="portrait" style={{ width: '100%' }} src={require(`../resources/profile-photos/small-cropped/${person.name}.jpg`)} />
               </div>
             )
           })
