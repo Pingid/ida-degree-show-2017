@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './Components/App/App';
 import registerServiceWorker from './registerServiceWorker';
+
+import './wheelRotation.css';
+import './slice.css';
 import './index.css';
 
 Math.radians = function(degrees) {

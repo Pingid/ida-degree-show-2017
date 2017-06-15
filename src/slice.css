@@ -1,0 +1,4 @@
+.slice { opacity: 1; }
+.slice-closed { filter: grayscale(100); opacity: .9; }
+.slice-closed:hover { opacity: 1; }
+.slice-open { opacity: 1; filter: grayscale(0); }

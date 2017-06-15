@@ -21,7 +21,6 @@ const MobileView = ({ people, selected, onSelect }) => {
         flexFlow: 'row wrap',
         boxSizing: 'content-box',
         padding: '0 1 rem',
-        marginBottom: '5rem',
       }}>
         {
           people.map((person, index) => {

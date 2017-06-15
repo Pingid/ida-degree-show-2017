@@ -52,16 +52,9 @@ a:visited { color: inherit; }
 
 /* COSTOM CLASSES ------------------------------------------------------------------------*/
 
-.slice {
-  filter: grayscale(100%);
-  opacity: .5;
-  transition: .3s;
-}
+.mobile-person { top: -100vh; transition: .3s; }
+.mobile-person-open { top: 0;}
 
-.slice-selected {
-  filter: grayscale(0%);
-  opacity: 1;
-}
 .person-info {
   position: fixed;
   top: 2rem;
@@ -82,15 +75,6 @@ a:visited { color: inherit; }
 }
 .header-line {
   margin: 0;
-  paddingLeft: 1rem;
-  borderLeft: 1px solid black;
-}
-
-.person-work {
-  width: 100%;
-  height: 30.9vh;
-  display: flex;
-  justify-content: center;
 }
 
 @media screen and (max-width: 800px) {

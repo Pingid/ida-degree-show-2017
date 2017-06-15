@@ -1,0 +1,26 @@
+.wheel { transition: 0.3s ease; }
+.wheel-rotation-0 { transform: rotate(-0deg) }
+.wheel-rotation-11 { transform: rotate(-11.25deg) }
+.wheel-rotation-22 { transform: rotate(-22.5deg) }
+.wheel-rotation-33 { transform: rotate(-33.75deg) }
+.wheel-rotation-45 { transform: rotate(-45deg) }
+.wheel-rotation-56 { transform: rotate(-56.25deg) }
+.wheel-rotation-67 { transform: rotate(-67.5deg) }
+.wheel-rotation-78 { transform: rotate(-78.75deg) }
+.wheel-rotation-90 { transform: rotate(-90deg) }
+.wheel-rotation-101 { transform: rotate(-101.25deg) }
+.wheel-rotation-112 { transform: rotate(-112.5deg) }
+.wheel-rotation-123 { transform: rotate(-123.75deg) }
+.wheel-rotation-135 { transform: rotate(-135deg) }
+.wheel-rotation-146 { transform: rotate(-146.25deg) }
+.wheel-rotation-157 { transform: rotate(-157.5deg) }
+.wheel-rotation-168 { transform: rotate(-168.75deg) }
+.wheel-rotation-180 { transform: rotate(-180deg) }
+.wheel-rotation-191 { transform: rotate(-191.25deg) }
+.wheel-rotation-202 { transform: rotate(-202.5deg) }
+.wheel-rotation-213 { transform: rotate(-213.75deg) }
+.wheel-rotation-225 { transform: rotate(-225deg) }
+.wheel-rotation-236 { transform: rotate(-236.25deg) }
+.wheel-rotation-247 { transform: rotate(-247.5deg) }
+.wheel-rotation-258 { transform: rotate(-258.75deg) }
+.wheel-rotation-270 { transform: rotate(-270deg) }
