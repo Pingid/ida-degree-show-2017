@@ -70,6 +70,10 @@ const MobilePerson = ({ people, selected, onSelect }) => {
             <div style={{ background: 'white', padding: '2rem', boxSizing: 'content-box' }}>
               {
                 person.work.map((piece, i) => {
+                  const image = () => {
+                    if (piece.photos) return require(`../resources/work/small/${piece.photos[0]}.jpg`);
+                    return require(`../resources/drawings/${person.name}-${i + 1}.jpg`);
+                  }
                   const collaborators = () => {
                     if (piece.collaborators) {
                       const collaborators = piece.collaborators.map(x => people.find(y => y.name === x));
@@ -88,7 +92,7 @@ const MobilePerson = ({ people, selected, onSelect }) => {
                   return (
                     <div key={uniqueId()} style={{ margin: '0 1rem', marginBottom: '5rem' }}>
                       <h4 className="orange" style={{ margin: '0' }}>{piece.name}</h4>
-                      <img alt="sketch" style={{ width: '100%' }} src={require(`../resources/drawings/${person.name}-${i + 1}.jpg`)} />
+                      <img alt="sketch" style={{ width: '100%' }} src={image()} />
                       <h5 style={{ marginTop: '5px' }}>{piece.description}</h5>
                       { collaborators() }
                     </div>

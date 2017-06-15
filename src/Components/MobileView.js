@@ -14,7 +14,7 @@ const MobileView = ({ people, selected, onSelect }) => {
         marginBottom: '4rem',
         maxWidth: '46rem',
         fontWeight: '600' }}>
-        We are the BA(Hons) Interaction Design Arts graduating class of 2017 from the London College of Communication. Through different approaches to design and art we generated a wide range of high-tech to low-tech and no-tech projects. Here you will find the projects exhibited in our 360 Degree Show, June 2017.
+        We are the 2017 graduating class of Interaction Design Arts at the London College of Communication. Here you can see our work exhibited at the 360 Degree Show and find links to our other work.
       </h4>
       <div style={{
         display: 'flex',

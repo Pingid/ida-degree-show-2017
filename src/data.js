@@ -19,6 +19,7 @@ export default {
       work: [{
         name: 'Key Themes of Life',
         description: 'Through the use of video and photography an exploration into the key themes of life.',
+        photos: ['Annie'],
       }]
     },
     {
@@ -30,7 +31,8 @@ export default {
       },
       work: [{
         name: 'Dumpster Island',
-        description: 'An embodied experience which immerses you into a sea of rubbish, increasing awareness about the devastating impact of humans debris on marine life.'
+        description: 'An embodied experience which immerses you into a sea of rubbish, increasing awareness about the devastating impact of humans debris on marine life.',
+        photos: ['Chiara'],
       }]
     },
     {
@@ -43,7 +45,7 @@ export default {
       work: [{
         name: 'Dégorgement',
         description: 'A playful musical installation harnessing the sound of a popping cork.',
-        src: 'people/Daichi/DaichiThinkRed.jpg'
+        photos: ['Daichi'],
       }]
     },
     {
@@ -55,7 +57,8 @@ export default {
       },
       work: [{
         name: 'SolPower',
-        description: 'A project to help combat air pollution caused by cooking on open fires in rural Ethiopia. The SolPower oven harvests energy from the sun, while also recycling water.'
+        description: 'A project to help combat air pollution caused by cooking on open fires in rural Ethiopia. The SolPower oven harvests energy from the sun, while also recycling water.',
+        photos: ['Eyob'],
       }]
     },
     {
@@ -67,7 +70,8 @@ export default {
       },
       work: [{
         name: 'Without a Canvas',
-        description: 'While exploring the use of unconventional materials for a canvas I thought about removing the canvas altogether. Using my own sketches that illustrate my situation with mental health as a subject, these hanging paintings are the result.'
+        description: 'While exploring the use of unconventional materials for a canvas I thought about removing the canvas altogether. Using my own sketches that illustrate my situation with mental health as a subject, these hanging paintings are the result.',
+        photos: ['Georgia-1', 'Georgia-2'],
       }]
     },
     {
@@ -79,7 +83,8 @@ export default {
       },
       work: [{
         name: 'Customised Sex Toys',
-        description: 'A project designing vibrator sleeves, exploring tactility sensation and colour, from a personal perspective.'
+        description: 'A project designing vibrator sleeves, exploring tactility sensation and colour, from a personal perspective.',
+        photos: ['Hari'],
       }]
     },
     {
@@ -92,7 +97,7 @@ export default {
       work: [{
         name: 'Honesty',
         description: 'A collection of drawings and writing mapping the artist’s emotional state.',
-        drawing: true,
+        photos: ['Hyo'],
       }]
     },
     {
@@ -104,7 +109,8 @@ export default {
         image: 'profile-photos/small-cropped/Jodie.jpg' },
       work: [{
         name: 'Sound Wave',
-        description: 'A kinetic sculpture reacting to ambient sound.'
+        description: 'A kinetic sculpture reacting to ambient sound.',
+        photos: ['Jodie'],
       }]
     },
     {
@@ -117,7 +123,7 @@ export default {
       work: [{
         name: 'Biking Blindfold',
         description: 'An example of how wearable technology might transform cycling. Try out an application that makes cycling so easy you could do it blindfolded.',
-        src: 'people/Joe/20170606_171158.jpg'
+        photos: ['Joe'],
       }]
     },
     {
@@ -130,7 +136,7 @@ export default {
       work: [{
         name: 'The Invisible Hand',
         description: 'Borrowed from Adam Smith’s economic principle, The Invisible Hand challenges the arbitrary economical value given to artworks and questions the commoditisation of art.',
-        drawing: true
+        photos: ['Marion-1', 'Marion-1.2'],
       }]
     },
     {
@@ -143,7 +149,7 @@ export default {
       work: [{
         name: 'SCHIZOWAVE',
         description: 'A proposed sub-culture critiquing ideals of creative freedom and one’s inner animalistic nature, sporting cult-like masks made from live plants, and it’s own personalised genre of electronic music.',
-        drawing: true
+        photos: ['Matthew1', 'Matthew2'],
       }]
     },
     {
@@ -156,8 +162,7 @@ export default {
       work: [{
         name: 'The Pearl',
         description: 'These images were shot over 30 days between February and March 2011. They record the hardest and most beautiful experience I have ever had. Because of all these events I cannot return to my home.',
-        src: 'people/Mo/DSC_3247.JPG',
-        drawing: true
+        photos: ['Mo1', 'Mo2'],
       }]
     },
     {
@@ -170,8 +175,7 @@ export default {
       work: [{
         name: 'Photography and Drawing',
         description: 'Photographs as fragments and observations from my daily life. Inspired by movement, rhythm and nature; an exploration of the polarities between construction and deconstruction.',
-        src: 'people/Pinks/image1.JPG',
-        drawing: true
+        photos: ['Pinks-1', 'Pinks-2'],
       }]
     },
     {
@@ -199,10 +203,12 @@ export default {
       work: [{
         name: 'Chair du Rhône',
         description: 'Let your senses be the wine tasting sommelier in this haptic installation. The chair reflects characteristics of the Cote-Rôtie appellation in order to enhance the tasters appreciation of the wine.',
-        collaborators: ['Viola', 'Jodie']
+        collaborators: ['Viola', 'Jodie'],
+        photos: ['Viola-Rosie-Jodie'],
       }, {
         name: 'Upside Down Town',
-        description: 'Explore the 360o show with Upside Down Town, an experience involving headsets and inverted vision that will leave you with a new understanding of disorientation.'
+        description: 'Explore the 360o show with Upside Down Town, an experience involving headsets and inverted vision that will leave you with a new understanding of disorientation.',
+        photos: ['Rosie'],
       }]
     },
     {
@@ -215,7 +221,8 @@ export default {
       },
       work: [{
         name: 'Confessions',
-        description: 'An interactive installation that engages the audience in understanding the emotional construct and concept of confession and guilt.'
+        description: 'An interactive installation that engages the audience in understanding the emotional construct and concept of confession and guilt.',
+        photos: ['Sara'],
       }]
     },
     {
@@ -227,7 +234,8 @@ export default {
         image: 'profile-photos/small-cropped/Sasha.jpg' },
       work: [{
         name: 'Conductive Scalextrics',
-        description: 'A game exploring the conductive properties of the human body.'
+        description: 'A game exploring the conductive properties of the human body.',
+        photos: ['Sasha-1'],
       }]
     },
     {
@@ -239,7 +247,8 @@ export default {
         image: 'profile-photos/small-cropped/Shinny.jpg' },
       work: [{
         name: 'Loud Silence',
-        description: 'An a exploration into the physical properties, visual representation and acoustic shadow of an everyday occurrence.'
+        description: 'An a exploration into the physical properties, visual representation and acoustic shadow of an everyday occurrence.',
+        photos: ['Shini'],
       }]
     },
     {
@@ -253,7 +262,7 @@ export default {
       work: [ {
         name: 'London',
         description: 'Reflections of the artist’s daily encounters with London life. Within the series runs the theme of a journey through urban spaces.',
-        src: 'people/Stefon/Millennium by Stefon Grant.jpg'
+        photos: ['Stefon'],
       }]
     },
     {
@@ -279,7 +288,8 @@ export default {
       work: [{
         name: 'Grape Stomping',
         description: 'An interactive installation designed to recreate the lost tradition of grape stomping.',
-        collaborators: ['Sasha']
+        collaborators: ['Sasha'],
+        photos: ['Tommaso-Sasha']
       }]
     },
     {
@@ -292,10 +302,11 @@ export default {
       work: [{
         name: 'America First',
         description: 'Each time Trump Tweets, the saw gradually cuts closer to its own power supplies.',
-        src: 'people/Tudor/cc42.jpg'
+        photos: ['Tudor2'],
       }, {
         name: 'Coke Side of Life',
-        description: 'An investigation into the behaviour Coca-Cola employs to counter-promote the media’s coverage of the sugar debate.'
+        description: 'An investigation into the behaviour Coca-Cola employs to counter-promote the media’s coverage of the sugar debate.',
+        photos: ['Tudor1'],
       }]
     },
     {
@@ -308,7 +319,7 @@ export default {
       work: [{
         name: 'Music Wheel',
         description: 'Inspired by the sensory condition Synaesthesia, this project aims to explore the creative possibilities that exist across the audio visual spectrum.',
-        src: 'people/Viola/IMG_6224.jpg'
+        photos: ['Viola2'],
       }]
     },
     {

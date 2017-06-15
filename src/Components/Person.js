@@ -16,7 +16,10 @@ const Person = ({ people, selected, onSelect }) => {
         <div className="person-work" style={{}}>
           {
             currentPerson.work.map((piece, i) => {
-              const image = require(`../resources/drawings/${currentPerson.name}-${i + 1}.jpg`);
+              const image = () => {
+                if (piece.photos) return require(`../resources/work/small/${piece.photos[0]}.jpg`);
+                return require(`../resources/drawings/${currentPerson.name}-${i + 1}.jpg`);
+              }
               const collaborators = () => {
                 if (piece.collaborators) {
                   const collaborators = piece.collaborators.map(x => people.find(y => y.name === x));
@@ -36,7 +39,7 @@ const Person = ({ people, selected, onSelect }) => {
                 return (
                   <div  key={uniqueId()} style={{ display: 'flex', flexFlow: 'column', margin: '0 3rem' }}>
                     <h4 className="orange" style={{ marginTop: 0 }}>{piece.name}</h4>
-                    <img alt="piece" style={{ width: '100%' }} src={image} />
+                    <img alt="piece" style={{ width: '100%' }} src={image()} />
                     <h5 style={{  }}>{piece.description}</h5>
                     { collaborators() }
                   </div>
@@ -44,7 +47,7 @@ const Person = ({ people, selected, onSelect }) => {
               }
               return [
                 <div  key={uniqueId()} style={{
-                  backgroundImage: `url(${image})`,
+                  backgroundImage: `url(${image()})`,
                   backgroundSize: 'contain',
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'right',

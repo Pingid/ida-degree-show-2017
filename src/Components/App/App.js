@@ -106,7 +106,7 @@ class App extends Component {
                   onSelect={this.handleSelect.bind(this)} />
               ) : (
                 <h3 style={{ width: '61.8vw', color: 'black', margin: '0 auto', maxWidth: '46rem', fontWeight: '600' }}>
-                  We are Interaction Design Arts at the London Collage of Communication graduating 2017. Here you can see are work exhibited at our 360 degree show and find links to our other work.
+                  We are the 2017 graduating class of Interaction Design Arts at the London College of Communication. Here you can see our work exhibited at the 360 Degree Show and find links to our other work.
                 </h3>
               )
             }
