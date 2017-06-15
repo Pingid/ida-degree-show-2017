@@ -10,7 +10,7 @@ import data from '../../data';
 
 const layout = layoutGenerator({
  mobile: 0,
- desktop: 740,
+ desktop: 600,
 });
 
 const OnMobile = layout.is('mobile');
@@ -20,37 +20,39 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      selected: 5,
+      selected: 0,
       people: data.people.map((x, i) => Object.assign({}, x, { _id: i })),
-      scroll: 0,
     }
   }
   componentDidMount() {
+    this.timer = setInterval(this.incrementSelection.bind(this), 15000);
     if (window.innerWidth > 600) {
       document.addEventListener('mousewheel', this.handleScroll.bind(this));
       document.addEventListener('DOMMouseScroll', this.handleScroll.bind(this));
     }
   }
   componentWillUnmount() {
+    clearInterval(this.timer);
     document.removeEventListener('mousewheel', this.handleScroll);
     document.removeEventListener('DOMMouseScroll', this.handleScroll);
   }
+  incrementSelection() {
+    const { selected, people } = this.state;
+    if (selected >= people.length - 1) return this.setState({ selected: 0 });
+    return this.setState({ selected: selected + 1 });
+  }
   handleScroll(event) {
-		const { people, selected, scroll } = this.state;
-    const e = window.event || event;
+		const { people } = this.state;
+    let e = window.event || event;
     const delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-
-    if (scroll <= -9) {
-      if (selected <= 0) return this.setState({ selected: people.length - 1, scroll: 0 });
-      return this.setState({ selected: selected - 1, scroll: 0 });
+    if (delta < 0 && e.wheelDelta < -10) {
+      if (this.state.selected === 0) return this.setState({ selected: people.length - 1 })
+      return this.setState({ selected: this.state.selected - 1})
     }
-    if (scroll >= 9) {
-      if (selected >= people.length - 1) return this.setState({ selected: 0, scroll: 0 });
-      return this.setState({ selected: selected + 1, scroll: 0 });
+    if (delta > 0 && e.wheelDelta > 10) {
+      if (this.state.selected === people.length - 1) return this.setState({ selected: 0 })
+      return this.setState({ selected: this.state.selected + 1})
     }
-
-    if (delta < 0 && e.wheelDelta < -1) { return this.setState({ scroll: scroll - 1}) }
-    if (delta > 0 && e.wheelDelta > 1) { return this.setState({ scroll: scroll + 1}) }
   }
   handleSelect(id) {
     this.setState({ selected: id })
@@ -110,8 +112,8 @@ class App extends Component {
                   selected={selected}
                   onSelect={this.handleSelect.bind(this)} />
               ) : (
-                <h3 style={{ width: '61.8vw', color: 'black', margin: '0 auto', maxWidth: '46rem', fontWeight: '100' }}>
-                  We are the 2017 graduating class of Interaction Design Arts at the London College of Communication. Here you can see our work exhibited at the 360 Degree Show and find links to our other work.
+                <h3 style={{ width: '61.8vw', color: 'black', margin: '0 auto', maxWidth: '46rem', fontWeight: '600' }}>
+                  We are Interaction Design Arts at the London Collage of Communication graduating 2017. Here you can see are work exhibited at our 360 degree show and find links to our other work.
                 </h3>
               )
             }
