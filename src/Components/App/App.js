@@ -58,10 +58,10 @@ class App extends Component {
   }
   selectPerson(id) {
     const { people } =  this.state;
-    const { history } = this.props;
+    const { match, history } = this.props;
     const person = people.find(x => x._id === id);
     const normalisedName = person.profile.name.toLowerCase().split(' ').join('-');
-    return history.push(normalisedName);
+    if (normalisedName !== match.params.name) return history.push(normalisedName);
   }
   handleScroll(event) {
 		const { people, scroll } = this.state;
