@@ -14,7 +14,7 @@ export default {
       profile: {
         name: 'Annie Crockford',
         title: 'Videographer, Editor',
-        website: 'www.vimeo.com/user22401753',
+        website: 'http://www.vimeo.com/user22401753',
       },
       work: [{
         name: 'Key Themes of Life',
@@ -27,7 +27,7 @@ export default {
       profile: {
         name: 'Chiara Zucchi',
         title: 'Idea maker, Art practitioner',
-        website: 'www.chiarazzzucchi.com',
+        website: 'http://www.chiarazzzucchi.com',
       },
       work: [{
         name: 'Dumpster Island',
@@ -40,7 +40,7 @@ export default {
       profile: {
         name: 'Daichi Yamamoto',
         title: 'Interactive Sound Artist, Musician',
-        website: 'daichibarnett.com',
+        website: 'http://www.daichibarnett.com',
       },
       work: [{
         name: 'Dégorgement',
@@ -53,7 +53,7 @@ export default {
       profile: {
         name: 'Eyob Habte',
         title: 'Interaction Designer',
-        website: 'www.eyobhabte.com',
+        website: 'http://www.eyobhabte.com',
       },
       work: [{
         name: 'SolPower',
@@ -79,7 +79,7 @@ export default {
       profile: {
         name: 'Hari Bulsara',
         title: 'Interaction Designer',
-        webiste: 'www.cargocollective.com/miscellaneousity'
+        webiste: 'http://www.cargocollective.com/miscellaneousity'
       },
       work: [{
         name: 'Customised Sex Toys',
@@ -92,7 +92,7 @@ export default {
       profile: {
         name: 'Hyo seo kim',
         title: 'Interaction Designer, Illustrator',
-        website: 'www.behance.net/hyosekim',
+        website: 'http://www.behance.net/hyosekim',
         image: 'profile-photos/small-cropped/Hyo.jpg' },
       work: [{
         name: 'Honesty',
@@ -105,7 +105,7 @@ export default {
       profile: {
         name: 'Jodie Newsum',
         title: 'Interaction Designer',
-        website: 'jodienewsum.co.uk',
+        website: 'http://www.jodienewsum.co.uk',
         image: 'profile-photos/small-cropped/Jodie.jpg' },
       work: [{
         name: 'Sound Wave',
@@ -118,7 +118,7 @@ export default {
       profile: {
         name: 'Joe Hoole',
         title: 'Interaction designer',
-        website: 'joehoole.co.uk',
+        website: 'http://www.joehoole.co.uk',
         image: 'profile-photos/small-cropped/Joe.jpg' },
       work: [{
         name: 'Biking Blindfold',
@@ -131,7 +131,7 @@ export default {
       profile: {
         name: 'Marion Lagedamont',
         title: 'Critical Designer',
-        website: 'www.marionlage.com',
+        website: 'http://www.marionlage.com',
         image: 'profile-photos/small-cropped/Marion.jpg'},
       work: [{
         name: 'The Invisible Hand',
@@ -157,7 +157,7 @@ export default {
       profile: {
         name: 'Mohamed Alaradi',
         title: 'Photographer, Videographer, Interaction Designer',
-        website: 'www.aradi.me',
+        website: 'http://www.aradi.me',
         image: 'profile-photos/small-cropped/Mo.jpg' },
       work: [{
         name: 'The Pearl',
@@ -183,7 +183,7 @@ export default {
       profile: {
         name: 'Robert Karpavicius',
         title: 'Interaction Designer',
-        website: 'wolfcriedboy.co.uk',
+        website: 'http://www.wolfcriedboy.co.uk',
         image: 'profile-photos/small-cropped/Rob.jpg' },
       work: [{
         name: 'Photography and Drawing',
@@ -198,7 +198,7 @@ export default {
       profile: {
         name: 'Rosie Allen',
         title: 'Interaction Designer, Events, Designer',
-        website: 'www.rosiejallen.com',
+        website: 'http://www.rosiejallen.com',
         image: 'profile-photos/small-cropped/Rosie.jpg' },
       work: [{
         name: 'Chair du Rhône',
@@ -216,7 +216,7 @@ export default {
       profile: {
         name: 'Sara Tavasolian',
         title: 'Art Director, Graphic Designer',
-        website: 'www.saratavasolian.com',
+        website: 'http://www.saratavasolian.com',
         drawing: true,
       },
       work: [{
@@ -230,7 +230,7 @@ export default {
       profile: {
         name: 'Alexandra Sokolova',
         title: 'Photographer, Interaction Designer',
-        website: 'alexandra-sokolova.com',
+        website: 'http://www.alexandra-sokolova.com',
         image: 'profile-photos/small-cropped/Sasha.jpg' },
       work: [{
         name: 'Conductive Scalextrics',
@@ -243,7 +243,7 @@ export default {
       profile: {
         name: 'Myeong Shin Kim',
         title: 'Interaction Artist',
-        website: 'www.myeongshinkim.com',
+        website: 'http://www.myeongshinkim.com',
         image: 'profile-photos/small-cropped/Shinny.jpg' },
       work: [{
         name: 'Loud Silence',
@@ -270,7 +270,7 @@ export default {
       profile: {
         name: 'Sydney Fortune',
         title: 'Interactive Performance Artist',
-        website: 'sgfortune2.wixsite.com/sydneyfortune',
+        website: 'http://www.sgfortune2.wixsite.com/sydneyfortune',
         image: 'profile-photos/small-cropped/Sydney.jpg',
         drawing: true },
       work: [{
@@ -283,7 +283,7 @@ export default {
       profile: {
         name: 'Tommaso Cesaro',
         title: 'Interactive Designer',
-        website: 'www.tommasocesaro.co.uk',
+        website: 'http://www.tommasocesaro.co.uk',
         image: 'profile-photos/small-cropped/Tommy.jpg' },
       work: [{
         name: 'Grape Stomping',
@@ -297,7 +297,7 @@ export default {
       profile: {
         name: 'Tudor Crockford',
         title: 'Interactive Designer, Digital Artist',
-        website: 'www.tudorcrockford.com',
+        website: 'http://www.tudorcrockford.com',
         image: 'profile-photos/small-cropped/Tudor.jpg' },
       work: [{
         name: 'America First',
@@ -314,7 +314,7 @@ export default {
       profile: {
         name: 'Viola Zini',
         title: 'Interaction designer',
-        website: 'http://violazini.com',
+        website: 'http://www.violazini.com',
         image: 'profile-photos/small-cropped/Viola.jpg' },
       work: [{
         name: 'Music Wheel',
@@ -327,7 +327,7 @@ export default {
       profile: {
         name: 'Yasmine Heinel',
         title: 'Musician, DJ, Visual artist',
-        website: 'www.behance.com/yasmineheinel'
+        website: 'http://www.behance.com/yasmineheinel'
       },
       work: [{
         name: 'Spirituality and Rave Culture',
