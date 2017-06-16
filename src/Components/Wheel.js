@@ -1,6 +1,6 @@
 import React from 'react';
 import Slice from './Slice';
-import { uniqueId } from 'lodash';
+// import { uniqueId } from 'lodash';
 
 const Wheel = ({ people, selected, onSelect, radius }) => {
   const theta = (360 / people.length);
@@ -14,16 +14,16 @@ const Wheel = ({ people, selected, onSelect, radius }) => {
     return newRotation
   }
   return (
-    <div className={`wheel wheel-rotation${Math.trunc(wheelRotation())}`} style={{ width: `${2 * radius}px`, height: `${2 * radius}px` }}>
+    <div className={`wheell wheel-rotationn${Math.trunc(wheelRotation())}`} style={{ width: `${2 * radius}px`, height: `${2 * radius}px` }}>
       {
-        people.map((x) => {
+        people.map((x, i) => {
           const src = require(`../resources/profile-photos/small-cropped/${x.name}.jpg`);
           return (
             <Slice
-                key={uniqueId()}
+                key={i}
                 imageSrc={src}
                 radius={radius}
-                rotation={sliceRotation(x._id)}
+                rotation={sliceRotation(x._id) + wheelRotation()}
                 selected={x._id === selected}
                 onSelect={() => onSelect(x._id)}
                 theta={theta}
